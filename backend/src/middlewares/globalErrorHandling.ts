@@ -37,7 +37,7 @@ const handleJWTError = () =>
 const handleJWTExpiredError = () =>
   new customError("Your token has expired! Please log in again.", 401);
 
-// Global error handler middleware
+// Global error handler middleware function
 export const globalErrorHandler = (
   err: customError,
   req: Request,
